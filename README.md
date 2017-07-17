@@ -4,7 +4,7 @@ Spring Boot web app for service discovery.  The application service is a user of
 
 ## Getting Started
 
-This project is the client service that interfaces with the Netflix OSS Discovery Server
+This project is the service that interfaces with the Netflix OSS Discovery Server it registers itself with the Eureka server so other clients can use it.
 ### Things that make this project bootiful
 
 What things you need to install the software and how to install them
@@ -37,36 +37,17 @@ Name of the service and the location of the Eureka server
 ## Actuator
 Access the actuator through postman or curl at:
 ```
-localhost:8090/mappings
+localhost:<port>/mappings
 ```
 To view the metrics navigate to:
 
 ```
-localhost:8090/metrics
+localhost:<port>/metrics
 ```
 To view the info.
 ```
-localhost:8090/info
+localhost:<port>/info
 ```
-## Running the tests
-Tests are ran by executing the command:
-```
-gradle test
-```
-A jacoco test coverage report by running the command:
-```
-gradle jacocoTestReport
-```
-
-To view the report navigate to build/report/jacoco/test/html/index.html
-
-## Testing the API endpoints
-The endpoints are easily viewed and tested using Swagger-UI to run the UI use the command
-```
-gradle bootRun
-```
-and navigate to http://localhost:8080/swagger-ui.html each of the endpoints are exposed through the UI and data can be 
-passed to the controller here.
 
 
 ## Authors
